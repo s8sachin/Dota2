@@ -13,9 +13,11 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-root to: 'matches#index'
+root to: 'welcome#index'
 match '/auth/:provider/callback', to: 'sessions#create', via: :all
 delete '/logout', to: 'sessions#destroy', as: :logout
+
+resources :matches, only: [:index, :show]
   # Example resource route with options:
   #   resources :products do
   #     member do

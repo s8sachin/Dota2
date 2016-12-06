@@ -7,10 +7,11 @@ class SessionsController < ApplicationController
     rescue
       flash[:error] = "Can't authorize you..."
     else
+      @user.load_matches!(10)
       session[:user_id] = @user.id
       flash[:success] = "Welcome, #{@user.nickname}!"
     end
-    redirect_to root_path
+    redirect_to matches_path
   end
   
   def destroy

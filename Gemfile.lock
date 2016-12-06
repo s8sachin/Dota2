@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/vinnicc/dota.git
+  revision: b512272c8c83e154ef150464c847a9f4045d5116
+  branch: master
+  specs:
+    dota (0.0.20)
+      facets (~> 3.0)
+      faraday (~> 0.9.1)
+      faraday_middleware (~> 0.9.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -56,10 +66,6 @@ GEM
     coffee-script-source (1.11.1)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
-    dota (0.0.20)
-      facets (~> 3.0)
-      faraday (~> 0.9.1)
-      faraday_middleware (~> 0.9.1)
     erubis (2.7.0)
     execjs (2.7.0)
     facets (3.1.0)
@@ -188,7 +194,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
-  dota
+  dota!
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-steam
