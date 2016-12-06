@@ -9,6 +9,7 @@
       <% if current_user %>
         <ul class="nav navbar-nav pull-right">
           <li><%= image_tag current_user.avatar_url, alt: current_user.nickname %></li>
+          <li><%= link_to 'Dashboard', matches_path %></li>
           <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
         </ul>
       <% else %>
