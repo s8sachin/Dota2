@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     begin
       @user = User.from_omniauth request.env['omniauth.auth']
     rescue
-      flash[:error] = "Can't authorize you..."
+      flash[:danger] = "Can't authorize you..."
     else
       @user.load_matches!(10)
       session[:user_id] = @user.id
