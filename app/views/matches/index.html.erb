@@ -4,7 +4,7 @@
     <% @matches.each do |match| %>
       <tr>
         <td>
-          <%= link_to match.started_at, match_path(match) %>
+          <%= link_to match.started_at.localtime, match_path(match) %>
         </td>
       </tr>
     <% end %>
