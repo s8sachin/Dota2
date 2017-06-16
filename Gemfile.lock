@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/vinnicc/dota.git
-  revision: b512272c8c83e154ef150464c847a9f4045d5116
+  revision: 8f5d0985edff0ddbbfa63e0dd89986cada812aa6
   branch: master
   specs:
-    dota (0.0.20)
+    dota (0.0.21)
       facets (~> 3.0)
       faraday (~> 0.9.1)
       faraday_middleware (~> 0.9.1)

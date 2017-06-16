@@ -1,6 +1,6 @@
 class MatchesController < ApplicationController
 	def index
-		@matches=Match.all.order(started_at: :desc).paginate(:page => params[:page])
+		@matches=Match.where("uid = ?", current_user.uid).order(started_at: :desc).paginate(:page => params[:page])
 	end
 	def show
 		@match = Match.find_by(id: params[:id])
